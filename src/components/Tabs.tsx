@@ -34,10 +34,10 @@ export const Tabs = ({ information }: TabsProps) => {
           </li>
         ))}
       </ul>
-      <div className="panels">
+      <div className="panels h-[319px] overflow-y-auto overflow-x-hidden">
         {information.map((info, index) => (
           <pre
-            className={`panels__item ${index == 0 ? "active" : ""} text-sm`}
+            className={`panels__item ${index == 0 ? "active" : ""} text-[14px]`}
             key={index}
             id="tab-1"
           >

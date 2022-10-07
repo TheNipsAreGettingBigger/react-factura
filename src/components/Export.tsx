@@ -9,7 +9,8 @@ type ExportProps = {
     venta : number,
     igv : number,
     total : number,
-    detraccion : number
+    detraccion : number,
+    a_pagar: number
   }[]
 }
 export const Export = ({ factura } : ExportProps) => {

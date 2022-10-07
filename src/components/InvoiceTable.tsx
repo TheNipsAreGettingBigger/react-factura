@@ -204,6 +204,7 @@ export const InvoiceTable = ({ xml }: TablaFacturaProps) => {
         venta :factura.totalVenta,
         igv : factura.IGV,
         total : parseFloat(factura.totalVenta) + parseFloat(factura.IGV) ,
+        a_pagar : factura.pagar,
         detraccion : factura.existeDetraccion ? factura.detraccion:0,
       }]} />
     </>
